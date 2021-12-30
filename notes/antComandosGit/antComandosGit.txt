@@ -1,0 +1,8 @@
+Clonando diretorio git
+git clone https://github.com/RogerioCS2/RcS-SpaceShooter.git
+
+Iniciando diretorio git para o GameMaker
+git config --global user.name rogeriocs
+git config --global user.email tecnologia.rogerio@gmail.com
+git init
+ 
