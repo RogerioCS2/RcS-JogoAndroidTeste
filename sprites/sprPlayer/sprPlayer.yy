@@ -41,7 +41,7 @@
     "spriteId": {"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 5.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
