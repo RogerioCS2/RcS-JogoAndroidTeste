@@ -1,14 +1,19 @@
 {
   "resources": [
     {"id":{"name":"Controle","path":"scripts/Controle/Controle.yy",},"order":0,},
+    {"id":{"name":"sprAlavancaD","path":"sprites/sprAlavancaD/sprAlavancaD.yy",},"order":3,},
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},"order":0,},
     {"id":{"name":"MovimentoPlayer","path":"scripts/MovimentoPlayer/MovimentoPlayer.yy",},"order":1,},
-    {"id":{"name":"objControle","path":"objects/objControle/objControle.yy",},"order":0,},
+    {"id":{"name":"objControleE","path":"objects/objControleE/objControleE.yy",},"order":0,},
     {"id":{"name":"antComandosGit","path":"notes/antComandosGit/antComandosGit.yy",},"order":1,},
+    {"id":{"name":"objMira","path":"objects/objMira/objMira.yy",},"order":1,},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
     {"id":{"name":"sprBaseAlavanca","path":"sprites/sprBaseAlavanca/sprBaseAlavanca.yy",},"order":1,},
     {"id":{"name":"sprAlavanca","path":"sprites/sprAlavanca/sprAlavanca.yy",},"order":0,},
+    {"id":{"name":"objControleD","path":"objects/objControleD/objControleD.yy",},"order":1,},
+    {"id":{"name":"sprBaseAlavancaD","path":"sprites/sprBaseAlavancaD/sprBaseAlavancaD.yy",},"order":2,},
+    {"id":{"name":"sprMira","path":"sprites/sprMira/sprMira.yy",},"order":1,},
     {"id":{"name":"antFuncoesUteis","path":"notes/antFuncoesUteis/antFuncoesUteis.yy",},"order":2,},
   ],
   "Options": [
