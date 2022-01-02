@@ -8,7 +8,7 @@
     {"id":{"name":"antComandosGit","path":"notes/antComandosGit/antComandosGit.yy",},"order":1,},
     {"id":{"name":"objMira","path":"objects/objMira/objMira.yy",},"order":1,},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"order":0,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"Cena1","path":"rooms/Cena1/Cena1.yy",},"order":0,},
     {"id":{"name":"sprPause","path":"sprites/sprPause/sprPause.yy",},"order":4,},
     {"id":{"name":"sprBaseAlavanca","path":"sprites/sprBaseAlavanca/sprBaseAlavanca.yy",},"order":1,},
     {"id":{"name":"sprBackgroundTemporario","path":"sprites/sprBackgroundTemporario/sprBackgroundTemporario.yy",},"order":0,},
@@ -38,7 +38,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Cena1","path":"rooms/Cena1/Cena1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
