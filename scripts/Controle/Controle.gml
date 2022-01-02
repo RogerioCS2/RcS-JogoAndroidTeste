@@ -73,12 +73,27 @@ function MovimentoM(){
 	alvo.y += velocidadeV;
 }
 
-function CriarBotao(){
+function CriarBotao(){	
 	virtual_key_add(748, 900, 128, 128, vk_left);
-	virtual_key_add(904, 900, 128, 128, vk_right);	
-	var frente = keyboard_check_pressed(vk_right);
-	var traz = keyboard_check_pressed(vk_left);	
-	x+= (frente - traz) * 50;
+	virtual_key_add(904, 900, 128, 128, vk_right);
+	
+	var atirar = keyboard_check_pressed(vk_right);
+	var pausar = keyboard_check_pressed(vk_left);
+	
+	if(atirar){
+		atirando = !atirando;
+		if(atirando){
+			show_debug_message("Chumbo Neles");
+		}else{
+			show_debug_message("Deu Ruim");
+		}		
+	}
+	
+	if(pausar){
+		jogoEmPausa = !jogoEmPausa;	
+		show_debug_message("Jogo Pausado");
+		show_debug_message(jogoEmPausa);
+	}
 }
 
 function BotoesUI(){
