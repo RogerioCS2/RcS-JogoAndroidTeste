@@ -22,6 +22,7 @@
         {"properties":[
             {"propertyId":{"name":"alvo","path":"objects/objControleD/objControleD.yy",},"objectId":{"name":"objControleD","path":"objects/objControleD/objControleD.yy",},"value":"inst_5E0DD4A6","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"objControleD","path":"objects/objControleD/objControleD.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1760.0,"y":928.0,"resourceVersion":"1.0","name":"inst_6516C9C9","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"objParede","path":"objects/objParede/objParede.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":17.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1888.0,"y":544.0,"resourceVersion":"1.0","name":"inst_FA7C4FB","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":{"name":"sprBackgroundTemporario","path":"sprites/sprBackgroundTemporario/sprBackgroundTemporario.yy",},"colour":4284900966,"x":0,"y":0,"htiled":true,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":30.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
@@ -33,6 +34,7 @@
     {"name":"inst_71FB9326","path":"rooms/Cena1/Cena1.yy",},
     {"name":"inst_5E0DD4A6","path":"rooms/Cena1/Cena1.yy",},
     {"name":"inst_6516C9C9","path":"rooms/Cena1/Cena1.yy",},
+    {"name":"inst_FA7C4FB","path":"rooms/Cena1/Cena1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

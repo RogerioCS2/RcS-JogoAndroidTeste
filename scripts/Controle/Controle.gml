@@ -29,7 +29,7 @@ function MovimentoP(){
 	if(!instance_exists(alvo)){exit;}	
 	var xx, yy;
 	xx = lengthdir_x(vel, dir);
-	yy = lengthdir_y(vel, dir);	
+	yy = lengthdir_y(vel, dir);		
 	var velocidadeH = (xx / sprite_width * 2) * velocidadeMaxima;
 	var velocidadeV = (yy / sprite_height * 2) * velocidadeMaxima;	
 	alvo.x += velocidadeH;
@@ -66,7 +66,7 @@ function MovimentoM(){
 	if(!instance_exists(alvo)){exit;}	
 	var xx, yy;
 	xx = lengthdir_x(vel, dir);
-	yy = lengthdir_y(vel, dir);	
+	yy = lengthdir_y(vel, dir);		
 	var velocidadeH = (xx / sprite_width * 2) * velocidadeMaxima;
 	var velocidadeV = (yy / sprite_height * 2) * velocidadeMaxima;	
 	alvo.x += velocidadeH;
@@ -95,9 +95,9 @@ function BotoesCentro(){
 	if(atirar){
 		atirando = !atirando;
 		if(atirando){
-			estado = TiroPlayer; 		
+			estado = TiroPlayer; 			
 		}else{
-			estado = playerParado;					
+			estado = playerParado;			
 		}		
 	}
 	
