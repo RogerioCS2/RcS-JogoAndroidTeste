@@ -1,3 +1,3 @@
 /// @description Elementos UI
 
- BotoesUI();
+ BotoesCentroUI();

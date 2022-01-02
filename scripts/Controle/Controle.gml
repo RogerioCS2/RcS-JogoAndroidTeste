@@ -73,7 +73,19 @@ function MovimentoM(){
 	alvo.y += velocidadeV;
 }
 
-function CriarBotao(){	
+function playerParado(){
+}
+
+function TiroPlayer(){
+	tempoTiro--;
+	if(tempoTiro < 0){
+		tempoTiro = 13;
+		//instance_create_layer(x + 4, y, layer, objMunicaoPistola); 
+		show_debug_message("Bang!!");
+	}	
+}
+
+function BotoesCentro(){	
 	virtual_key_add(748, 900, 128, 128, vk_left);
 	virtual_key_add(904, 900, 128, 128, vk_right);
 	
@@ -83,9 +95,9 @@ function CriarBotao(){
 	if(atirar){
 		atirando = !atirando;
 		if(atirando){
-			show_debug_message("Chumbo Neles");
+			estado = TiroPlayer; 		
 		}else{
-			show_debug_message("Deu Ruim");
+			estado = playerParado;					
 		}		
 	}
 	
@@ -96,7 +108,7 @@ function CriarBotao(){
 	}
 }
 
-function BotoesUI(){
+function BotoesCentroUI(){
 	draw_sprite_ext(sprPause, 0, 848, 928, 1, 1, 0, c_white, 0.50);
 	draw_sprite_ext(sprTiro, 0, 1000, 928, 1, 1, 0, c_white, 0.50);
 }
