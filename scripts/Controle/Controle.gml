@@ -73,3 +73,36 @@ function JoystickD(){
 	draw_sprite_ext(sprBaseAlavancaD, 0, x, y, image_xscale, image_yscale, 0, c_white, 0.50);
 	draw_sprite_ext(sprAlavancaD, 0, x + xx, y + yy, image_xscale, image_yscale, 0, c_white, 0.50);
 }
+
+function MovimentoM(){
+	if(!alvo){exit;}
+	if(!instance_exists(alvo)){exit;}
+	
+	var xx, yy;
+	xx = lengthdir_x(vel, dir);
+	yy = lengthdir_y(vel, dir);
+	
+	var velocidadeH = (xx / sprite_width * 2) * velocidadeMaxima;
+	var velocidadeV = (yy / sprite_height * 2) * velocidadeMaxima;
+	
+	alvo.x += velocidadeH;
+	alvo.y += velocidadeV;
+}
+
+function CriarBotao(){
+	virtual_key_add(748, 900, 128, 128, vk_left);
+	virtual_key_add(904, 900, 128, 128, vk_right);
+	
+	var frente = keyboard_check_pressed(vk_right);
+	var traz = keyboard_check_pressed(vk_left);
+	
+	x+= (frente - traz) * 50;
+}
+
+
+function BotoesUI(){
+	draw_sprite_ext(sprPause, 0, 848, 928, 1, 1, 0, c_white, 0.50);
+	draw_sprite_ext(sprTiro, 0, 1000, 928, 1, 1, 0, c_white, 0.50);
+}
+
+
