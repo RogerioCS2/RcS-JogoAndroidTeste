@@ -3,7 +3,7 @@
     "name": "sprParede",
     "path": "sprites/sprParede/sprParede.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": false,
   "spriteMaskId": null,
   "persistent": false,

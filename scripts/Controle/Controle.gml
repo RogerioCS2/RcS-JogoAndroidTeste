@@ -24,18 +24,6 @@ function JoystickE(){
 	draw_sprite_ext(sprAlavanca, 0, x + xx, y + yy, image_xscale, image_yscale, 0, c_white, 0.50);
 }
 
-function MovimentoP(){
-	if(!alvo){exit;}
-	if(!instance_exists(alvo)){exit;}	
-	var xx, yy;
-	xx = lengthdir_x(vel, dir);
-	yy = lengthdir_y(vel, dir);		
-	var velocidadeH = (xx / sprite_width * 2) * velocidadeMaxima;
-	var velocidadeV = (yy / sprite_height * 2) * velocidadeMaxima;	
-	alvo.x += velocidadeH;
-	alvo.y += velocidadeV;
-}
-
 function JoystickD(){	
 	if(!alvo){exit;}	
 	var pontoX = device_mouse_x_to_gui(0);
@@ -71,18 +59,6 @@ function MovimentoM(){
 	var velocidadeV = (yy / sprite_height * 2) * velocidadeMaxima;	
 	alvo.x += velocidadeH;
 	alvo.y += velocidadeV;
-}
-
-function playerParado(){
-}
-
-function TiroPlayer(){
-	tempoTiro--;
-	if(tempoTiro < 0){
-		tempoTiro = 13;
-		//instance_create_layer(x + 4, y, layer, objMunicaoPistola); 
-		show_debug_message("Bang!!");
-	}	
 }
 
 function BotoesCentro(){	
