@@ -49,25 +49,11 @@ function JoystickD(){
 	draw_sprite_ext(sprAlavancaD, 0, x + xx, y + yy, image_xscale, image_yscale, 0, c_white, 0.50);
 }
 
-function MovimentoM(){
-	if(!alvo){exit;}
-	if(!instance_exists(alvo)){exit;}	
-	var xx, yy;
-	xx = lengthdir_x(vel, dir);
-	yy = lengthdir_y(vel, dir);		
-	var velocidadeH = (xx / sprite_width * 2) * velocidadeMaxima;
-	var velocidadeV = (yy / sprite_height * 2) * velocidadeMaxima;	
-	alvo.x += velocidadeH;
-	alvo.y += velocidadeV;
-}
-
 function BotoesCentro(){	
 	virtual_key_add(748, 900, 128, 128, vk_left);
-	virtual_key_add(904, 900, 128, 128, vk_right);
-	
+	virtual_key_add(904, 900, 128, 128, vk_right);	
 	var atirar = keyboard_check_pressed(vk_right);
-	var pausar = keyboard_check_pressed(vk_left);
-	
+	var pausar = keyboard_check_pressed(vk_left);	
 	if(atirar){
 		atirando = !atirando;
 		if(atirando){
@@ -75,8 +61,7 @@ function BotoesCentro(){
 		}else{
 			estado = playerParado;			
 		}		
-	}
-	
+	}	
 	if(pausar){
 		jogoEmPausa = !jogoEmPausa;	
 		show_debug_message("Jogo Pausado");

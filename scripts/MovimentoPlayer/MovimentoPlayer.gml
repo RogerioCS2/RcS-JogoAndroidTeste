@@ -22,6 +22,28 @@ function MovimentoP(){
 	objControleE.alvo.y += velocidadeV;
 }
 
+function MovimentoM(){	
+	var velocidadeHorizontal, velocidadeVertical;
+	velocidadeHorizontal = lengthdir_x(objControleD.vel, objControleD.dir);
+	velocidadeVertical = lengthdir_y(objControleD.vel, objControleD.dir);	
+	if(place_meeting(x + velocidadeHorizontal, y, objParede)){
+		while !place_meeting(x + sign(velocidadeHorizontal), y, objParede){
+			x += sign(velocidadeHorizontal);			
+		}
+		velocidadeHorizontal = 0;	
+	}	
+	if(place_meeting(x , y + velocidadeVertical, objParede)){
+		while !place_meeting(x, y + sign(velocidadeVertical), objParede){
+			y += sign(velocidadeVertical);			
+		}
+		velocidadeVertical = 0;	
+	}		
+	var velocidadeH = (velocidadeHorizontal / sprite_width * 2) * objControleD.velocidadeMaxima;
+	var velocidadeV = (velocidadeVertical / sprite_height * 2) * objControleD.velocidadeMaxima;	
+	objControleD.alvo.x += velocidadeH;
+	objControleD.alvo.y += velocidadeV;
+}
+
 function playerParado(){
 	
 }
