@@ -1,6 +1,7 @@
 // Script Movimento do Protagonista 
 
 function MovimentoP(){
+	image_angle = point_direction(x,y, objMira.x, objMira.y);
 	var velocidadeHorizontal, velocidadeVertical;
 	velocidadeHorizontal = lengthdir_x(objControleE.vel, objControleE.dir);
 	velocidadeVertical = lengthdir_y(objControleE.vel, objControleE.dir);	
@@ -52,7 +53,7 @@ function TiroPlayer(){
 	tempoTiro--;
 	if(tempoTiro < 0){
 		tempoTiro = 13;
-		//instance_create_layer(x + 4, y, layer, objMunicaoPistola); 
-		show_debug_message("Bang!!");
+		instance_create_layer(x + 4, y, layer, objMunicao); 
+		//show_debug_message("Bang!!");
 	}	
 }
