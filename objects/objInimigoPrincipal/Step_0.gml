@@ -1,7 +1,6 @@
 /// @description Update
-UpdatePlayer();
+UpdateInimigo();
 script_execute(estado);
-
 
 
 

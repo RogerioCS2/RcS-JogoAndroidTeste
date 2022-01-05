@@ -57,3 +57,32 @@ function TiroPlayer(){
 		//show_debug_message("Bang!!");
 	}	
 }
+
+function EfeitoDano(){	
+	image_blend = c_red;	
+	tempoDano--;
+	if(tempoDano <= 0){
+		if(vidaPlayer > 0){
+			vidaPlayer--;
+		}		
+		tempoDano = room_speed / 4;
+		image_blend = c_white;
+		estado = playerParado;
+	}
+	
+	if(vidaPlayer <= 0){
+		//room_goto(GameOver);
+	}
+}
+
+function LevandoDano(){
+	//if(place_meeting(x, y, objBolaPrimeiroInimigo)){estado = EfeitoDano;}	
+	if(place_meeting(x, y, objInimigoPrincipal)){estado = EfeitoDano;}
+}	
+
+function UpdatePlayer(){
+	BotoesCentro();
+	MovimentoP();
+	LevandoDano();
+}
+
