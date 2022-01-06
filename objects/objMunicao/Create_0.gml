@@ -3,6 +3,7 @@
 	direction = point_direction(x, y, objMira.x, objMira.y);	
 	image_angle = point_direction(x, y, objMira.x, objMira.y);
 	speed = 10;
+	audio_play_sound(sndTiro, 11, false);	
 }
 
 function DestruindoMunicao(){
@@ -12,6 +13,12 @@ function DestruindoMunicao(){
 	if(y > room_height + 30 || y < -20){
 		instance_destroy();
 	}
+	
+	if(place_meeting(x, y, objParede)){
+		audio_play_sound(sndRicochete, 11, false);
+		instance_destroy();
+	}	
+
 }
 
  function ColisaoInimigo(){
@@ -21,5 +28,7 @@ function DestruindoMunicao(){
 		instance_destroy();		
 	}
 }
+
+
 
 MovimentoTiro();

@@ -52,7 +52,7 @@ function playerParado(){
 function TiroPlayer(){
 	tempoTiro--;
 	if(tempoTiro < 0){
-		tempoTiro = 13;
+		tempoTiro = 25;
 		instance_create_layer(x + 4, y, layer, objMunicao); 
 		//show_debug_message("Bang!!");
 	}	

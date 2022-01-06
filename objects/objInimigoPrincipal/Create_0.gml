@@ -5,7 +5,7 @@ proximoEstado = 0;
 
 velocidadeHorizontal = 0;
 velocidadeVertical = 0;
-velocidade = 0.2;
+velocidade = 1;
 
 destinoX = 0;
 destinoY = 0;
